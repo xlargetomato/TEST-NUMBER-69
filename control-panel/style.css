@@ -1,0 +1,126 @@
+body {
+  background-color: #eee;
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --main1: #fbf8be;
+  --main2: #234e70;
+  --main3: #f0f0f7;
+}
+.section-container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap; /* Updated to wrap for responsiveness */
+  justify-content: space-around; /* Updated to space-around */
+}
+
+.section {
+  width: 45%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 6px 6px 37px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 37px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 37px -13px rgba(0, 0, 0, 0.75);
+  background-color: #e84c3d;
+  margin-bottom: 20px;
+}
+.section:first-of-type {
+  background-color: #19bc9c;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Dark white xd */
+  margin-bottom: 20px;
+}
+
+.action-buttons button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.action-buttons button:hover {
+  background-color: #d5d5d5;
+}
+
+.logout-btn {
+  background-color: #dc3545; /* Red */
+  color: #ffffff; /* White */
+  border: 2px solid #c82333; /* Dark Red */
+}
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.admin-btn {
+  background-color: #ffc107; /* Yellow */
+  color: #343a40; /* Dark Gray */
+  border: 2px solid #d39e00; /* Dark Yellow */
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.user-card {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 6px 37px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 37px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 37px -13px rgba(0, 0, 0, 0.75);
+}
+
+.user-card h5,
+.user-card p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+.text-center {
+  text-align: center !important;
+  margin-top: 10px;
+}
+.bl {
+  background-color: #3598db !important;
+  color: white;
+  border: none;
+  position: relative;
+  z-index: 23;
+}
+.pu {
+  background-color: #9a59b5;
+  color: white;
+  border: none;
+  position: relative;
+  z-index: 23;
+}
+.ss,
+.sa {
+  position: relative;
+  z-index: 23;
+}
+.fa-solid,
+.fas {
+  font-weight: 900;
+  position: absolute;
+  font-size: 100px;
+  top: 0;
+  left: 0;
+  opacity: 0.21;
+  z-index: -1;
+  color: black;
+}

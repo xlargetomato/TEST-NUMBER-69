@@ -1,0 +1,81 @@
+:root {
+  --main1: #fbf8be;
+  --main2: #234e70;
+  --main3: #f0f0f7;
+}
+body {
+  background-color: var(--main1);
+  font-family: "Cairo", sans-serif;
+}
+.container {
+  background-color: var(--main2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 50px;
+}
+h2 {
+  color: var(--main3);
+}
+.back-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.add-btn {
+  margin-bottom: 20px;
+  float: right; /* Align to the right */
+}
+.form-container {
+  display: none;
+  margin-top: 20px;
+}
+.text-right {
+  text-align: right;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--main1);
+  font-size: 22px;
+  color: black;
+}
+.card h3 {
+  font-weight: 900;
+}
+.btn2 {
+  position: relative;
+}
+.btn1 {
+  max-width: 200px;
+}
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: right;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  /* padding: 10px; */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background: var(--main1);
+  height: 50px;
+}
+select.form-control:not([size]):not([multiple]) {
+  height: calc(2.75rem + 2px);
+}
+label.text-right {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: white;
+  display: flex;
+}

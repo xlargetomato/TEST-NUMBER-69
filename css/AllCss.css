@@ -119,6 +119,7 @@ body {
   right: 7%;
   cursor: pointer;
   font-size: 25px;
+  transition: 0.5s;
 }
 .slidedown:hover {
   color: black;

@@ -6,6 +6,8 @@ const lectureList = document.querySelector(".slidedown");
 const listA = document.querySelector(".listA");
 lectureList.onclick = () => {
   listA.classList.toggle("BLOCK");
+  lectureList.classList.toggle("fa-caret-down");
+  lectureList.classList.toggle("fa-caret-up");
 };
 LINKS[0].addEventListener("click", () => {
   window.location = "index.html";
