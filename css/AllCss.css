@@ -113,14 +113,14 @@ body {
 .HUM {
   cursor: pointer;
 }
-.slidedown {
+/* .slidedown {
   position: absolute;
-  top: 20%;
-  right: 7%;
+  top: 31.5%;
+  right: -5%;
   cursor: pointer;
   font-size: 25px;
   transition: 0.5s;
-}
+} */
 .slidedown:hover {
   color: black;
 }
@@ -151,8 +151,14 @@ body {
   .sidebar .linkdad {
     margin: 50px auto 20px 3px;
   }
+  .listA {
+    width: max-content;
+    font-size: 9px;
+    position: relative;
+    right: 7px;
+  }
 }
-/* //////////////////////   Content Section Brother (1)     ///////////////////// */
+/* //////////////////////   Main Section Brother (1)     ///////////////////// */
 .contentA {
   width: 100%;
 }
@@ -177,6 +183,7 @@ body {
   height: 15vh;
   margin-bottom: -7px;
   min-height: 100px;
+
   max-height: 150px;
   bottom: -2px;
 }
@@ -217,7 +224,6 @@ body {
     transform: translate3d(85px, 0, 0);
   }
 }
-/*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
     height: 120px;
@@ -231,7 +237,7 @@ body {
   text-align: center;
   font-size: 39px;
 }
-/* //////////////////////   Content Section Brother (2)     ///////////////////// */
+/* //////////////////////   Course Section Brother (2)     ///////////////////// */
 .titleB {
   text-align: center;
   padding: 20px;
@@ -262,14 +268,14 @@ body {
 .lectureContainer .textB h1 {
   font-size: 24px;
 }
-.lectureContainer button {
+.lectureContainer .buttons-to-go button {
   background-color: var(--main3);
   border: none;
   border-radius: 5px;
   width: 100px;
-  padding: 7px;
+  padding: 9px;
   outline: none;
-  font-weight: bold;
+  font-weight: bolder;
   margin: 20px;
   cursor: pointer;
 }
@@ -279,7 +285,73 @@ body {
 .main-content .lectureContainer .cover {
   max-width: 100%;
 }
-/* //////////////////////   Content Section Brother (3)     ///////////////////// */
+.buttons-to-go {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* //////////////////////   Lecture/Questions Section Brother (3)     ///////////////////// */
+.container-ALL {
+  display: flex;
+  justify-content: space-around;
+}
+.titleLeft {
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+.titleLeft::before,
+.titleRight::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: #19384f;
+  top: 79%;
+  left: 25%;
+}
+.titleRight {
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+.container-content-lecture i {
+  background-color: var(--main3);
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+}
+.container-content-lecture i:hover {
+  background-color: rgb(186, 186, 186);
+}
+.container-content-lecture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: var(--main2);
+  color: white;
+  border-radius: 5px;
+  width: max-content;
+}
+.lecture-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .container-ALL {
+    flex-direction: column;
+  }
+}
+/* //////////////////////   Assignments Section Brother (4)     ///////////////////// */
 .grid-assign {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -311,6 +383,9 @@ body {
   .assign-container img {
     max-width: 100%;
   }
+  .assign-container img {
+    width: 115px;
+  }
 }
 @media (max-width: 490px) {
   .assign-container {
@@ -320,5 +395,8 @@ body {
   .assign-container img {
     max-width: 100%;
     margin-left: 135px;
+  }
+  .assign-container img {
+    width: 100px;
   }
 }
