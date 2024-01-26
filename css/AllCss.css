@@ -95,6 +95,7 @@ body {
   transition: 0.3s;
   border-left: 2px solid var(--main1);
   padding: 5px;
+  font-size: 13px;
 }
 .listA li:hover {
   color: rgb(215, 211, 211);
