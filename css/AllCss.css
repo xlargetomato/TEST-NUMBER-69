@@ -13,8 +13,17 @@
 .BLOCK {
   display: block !important;
 }
+.translate {
+  translate: 0 !important;
+}
 .NONE {
   display: none !important;
+}
+.opacity {
+  background-color: #9791918a;
+}
+.move-right {
+  margin-left: 230px;
 }
 body {
   margin: 0;
@@ -50,6 +59,7 @@ body {
   background-color: var(--main2);
   box-shadow: 0px 0px 29px #21284c;
   transition: 0.5s;
+  z-index: 2;
 }
 .sidebar .sidebar-title {
   text-align: center;
@@ -111,8 +121,37 @@ body {
 .selected {
   background-color: #19384f;
 }
+.TOP {
+  display: flex;
+  flex-direction: column;
+}
+.where {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 2px;
+  margin-left: 5px;
+}
+.text-where {
+  cursor: pointer;
+}
 .HUM {
   cursor: pointer;
+  width: 35px;
+  display: none;
+  color: white;
+  padding: 8px;
+  border-right: white solid 1px;
+  transition: 0.5s;
+}
+.HUM:hover {
+  background-color: #224b6b;
+}
+.quest-long-idk {
+  width: 100%;
+  background-color: #18354b;
+  height: 34px;
+  display: flex;
 }
 /* .slidedown {
   position: absolute;
@@ -125,38 +164,15 @@ body {
 .slidedown:hover {
   color: black;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .sidebar {
-    width: 58px;
-    text-align: center;
-    padding: 0;
-  }
-  .slidedown {
-    display: none !important;
+    position: absolute;
+    height: 100vh;
+    display: none;
+    translate: -100%;
   }
   .HUM {
-    margin-top: 30px;
     display: block !important;
-  }
-  .sidebar-title {
-    font-size: 14px;
-  }
-  .sidebar .linkdad .link span {
-    display: none;
-  }
-  .sidebar .linkdad .link {
-    width: 43px;
-    display: flex;
-    justify-content: center;
-  }
-  .sidebar .linkdad {
-    margin: 50px auto 20px 3px;
-  }
-  .listA {
-    width: max-content;
-    font-size: 9px;
-    position: relative;
-    right: 7px;
   }
 }
 /* //////////////////////   Main Section Brother (1)     ///////////////////// */
