@@ -34,3 +34,6 @@ HUM.addEventListener("click", () => {
 // LINKS[99].addEventListener("click", () => {
 //   window.location = "index.html";
 // });
+////////////////////////////////////////////////////// DARK MODE
+// SOOOOOOOOOOOOOOOOOOOOOON
+///////////////////////////////////////
