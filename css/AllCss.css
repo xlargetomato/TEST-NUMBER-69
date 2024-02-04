@@ -145,8 +145,9 @@ body {
 }
 .text-where {
   cursor: pointer;
-  width: 300%;
   display: block;
+  height: 35px;
+  overflow: hidden;
 }
 
 .HUM {
@@ -180,7 +181,7 @@ body {
 }
 @media (max-width: 900px) {
   .sidebar {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     display: none;
     translate: -100%;
